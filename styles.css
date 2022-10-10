@@ -1,0 +1,150 @@
+/*---------Color scheme--------*/
+
+:root {
+--soft-blue: hsl(215, 51%, 70%);
+--cyan: hsl(178, 100%, 50%);
+--very-dark-blue: hsl(217, 54%, 11%);
+--dark-blue: hsl(216, 50%, 16%);
+--blue: hsl(215, 32%, 27%);
+--white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+#card {
+    background-color:var(--dark-blue);
+    width: 350px;
+    height: 600px;
+    margin: 0 auto;
+    align-items: center;
+    border-radius: 15px;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: 600;
+    padding: 0 0 15px 0;
+}
+
+h1 a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+h1 a:hover {
+    text-decoration: none;
+    color: var(--cyan);
+    transition: 0.75s;
+}
+
+p {
+    color: var(--soft-blue);
+    font-size: 18px;
+}
+
+.main-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 25px;
+}
+
+.overlay {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    left: 50%;
+    opacity: 50%;
+    background-color: var(--cyan);
+    border-radius: 10px;
+}
+
+.overlay img {
+    justify-content: center;
+    align-items: center;
+}
+
+.card-text {
+    padding: 25px;
+    padding-top: 0;
+    font-weight: 300;
+}
+
+
+#stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--blue);
+}
+
+.eth {
+display: flex;
+}
+
+.time {
+    display: flex;
+}
+
+.eth p {
+    color: var(--cyan);
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.time p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 5px;
+
+}
+
+#author {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#author p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#author a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+#author a:hover {
+    text-decoration: none;
+    color: var(--cyan);
+    transition: 0.75s;
+}
+
+
+#author img {
+    height: 30px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.attribution {
+    text-align: center;
+}
